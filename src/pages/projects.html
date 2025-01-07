@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <script type="module" src="../scripts/fetch_projects.js"></script>
+    <title>Projects | Data Maestro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Data Maestro</h1>
+      <nav>
+        <ul class="navbar-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="./writing.html">Writing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>My Projects</h2>
+        <hr>
+        <ul id="repo-list"></ul>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Designed and developed by
+        <a class="link" target="_blank" href="https://www.linkedin.com/in/kenneth-imade/"
+          >Kenneth Imade</a
+        >
+      </p>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>
